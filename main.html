@@ -117,6 +117,11 @@ function startGame() {
 	loadModuleList();
 	myArrow = new arrow(arrowPic, 50, 37);
 	myBlock = new block(blockPic, 20, 20);
+	
+	//directly load a module for quicker map building
+	var element = document.getElementById("moduleoptions");
+	element.selectedIndex = 2;
+	loadModule(element);
 }
 
 var myGameArea = {
